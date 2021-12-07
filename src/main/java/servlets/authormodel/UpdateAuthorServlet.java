@@ -1,9 +1,7 @@
 package servlets.authormodel;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.SneakyThrows;
-import manager.AuthorManager;
+import manager.MoviesManager;
 import model.Author;
 
 
@@ -22,8 +20,8 @@ public class UpdateAuthorServlet extends HttpServlet {
 //
             String authorId = req.getParameter("authorId");
 
-            AuthorManager authorManager = new AuthorManager();
-            Author author = authorManager.getAuthorById(Integer.parseInt(authorId));
+            MoviesManager moviesManager = new MoviesManager();
+            Author author = moviesManager.getAuthorById(Integer.parseInt(authorId));
             if (author != null) {
                 req.setAttribute("author", author);
             }

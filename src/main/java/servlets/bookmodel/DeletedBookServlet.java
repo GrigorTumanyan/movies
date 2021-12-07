@@ -21,7 +21,7 @@ public class DeletedBookServlet extends HttpServlet {
 
             BookManager bookManager = new BookManager();
             bookManager.deleteBook(Integer.parseInt(bookId));
-            resp.sendRedirect("/home");
+            resp.sendRedirect("/admin");
 
     }
 }

@@ -1,8 +1,9 @@
 package servlets.authormodel;
 
 import lombok.SneakyThrows;
-import manager.AuthorManager;
+import manager.MoviesManager;
 import model.Author;
+import model.Movie;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,10 +16,10 @@ public class AuthorServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-            String authorName = req.getParameter("authorName");
-            String authorLastName = req.getParameter("authorLastName");
-            AuthorManager authorManager = new AuthorManager();
-            authorManager.addAuthor(new Author(authorName, authorLastName));
+            String movieName = req.getParameter("authorName");
+            String genres = req.getParameter("authorLastName");
+            MoviesManager moviesManager = new MoviesManager();
+            moviesManager.addMovie(new Movie(movieName, genres));
             resp.sendRedirect("/getAllAuthors");
 
 

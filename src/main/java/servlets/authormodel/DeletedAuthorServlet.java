@@ -1,7 +1,7 @@
 package servlets.authormodel;
 
 import lombok.SneakyThrows;
-import manager.AuthorManager;
+import manager.MoviesManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,8 +15,8 @@ public class DeletedAuthorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
             String authorId = req.getParameter("authorId");
-            AuthorManager authorManager = new AuthorManager();
-            authorManager.deleteAuthor(Integer.parseInt(authorId));
+            MoviesManager moviesManager = new MoviesManager();
+            moviesManager.deleteAuthor(Integer.parseInt(authorId));
             resp.sendRedirect("/getAllAuthors");
 
     }

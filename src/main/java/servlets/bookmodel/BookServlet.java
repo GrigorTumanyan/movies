@@ -1,9 +1,7 @@
 package servlets.bookmodel;
 
 import lombok.SneakyThrows;
-import manager.AuthorManager;
 import manager.BookManager;
-import model.Author;
 import model.Book;
 
 import javax.servlet.ServletException;

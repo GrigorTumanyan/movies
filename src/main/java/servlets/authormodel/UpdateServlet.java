@@ -1,7 +1,7 @@
 package servlets.authormodel;
 
 import lombok.SneakyThrows;
-import manager.AuthorManager;
+import manager.MoviesManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +19,8 @@ public class UpdateServlet extends HttpServlet {
             String lastAuthorId = req.getParameter("lastAuthorId");
             String authorName = req.getParameter("authorName");
             String authorSurname = req.getParameter("authorSurname");
-            AuthorManager authorManager = new AuthorManager();
-            authorManager.updateAuthor(Integer.parseInt(lastAuthorId), Integer.parseInt(authorId), authorName, authorSurname);
+            MoviesManager moviesManager = new MoviesManager();
+            moviesManager.updateAuthor(Integer.parseInt(lastAuthorId), Integer.parseInt(authorId), authorName, authorSurname);
             resp.sendRedirect("/getAllAuthors");
 
 

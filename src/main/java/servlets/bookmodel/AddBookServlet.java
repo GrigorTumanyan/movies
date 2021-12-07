@@ -1,6 +1,6 @@
 package servlets.bookmodel;
 
-import manager.AuthorManager;
+import manager.MoviesManager;
 import model.Author;
 
 import javax.servlet.ServletException;
@@ -10,20 +10,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AddBookServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (req.getSession().getAttribute("user") == null) {
-            resp.sendRedirect("/404error");
-            return;
-        }
-            String authorId = req.getParameter("authorId");
-            AuthorManager authorManager = new AuthorManager();
-            Author author = authorManager.getAuthorById(Integer.parseInt(authorId));
-
-            if (author != null) {
-                req.setAttribute("author", author);
-            }
-            req.getRequestDispatcher("/addBooks").forward(req, resp);
-
-    }
+//    @Override
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        if (req.getSession().getAttribute("user") == null) {
+//            resp.sendRedirect("/404error");
+//            return;
+//        }
+//            String authorId = req.getParameter("authorId");
+//            MoviesManager moviesManager = new MoviesManager();
+//            Author author = moviesManager.getAuthorById(Integer.parseInt(authorId));
+//
+//            if (author != null) {
+//                req.setAttribute("author", author);
+//            }
+//            req.getRequestDispatcher("/addBooks").forward(req, resp);
+//
+//    }
 }

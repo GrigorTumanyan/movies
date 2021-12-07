@@ -11,9 +11,9 @@ public class DBConnectionProvider {
     private Connection connection;
 
     private final String DRIVER_NAME = "com.mysql.jdbc.Driver";
-    private final String DB_URL = "jdbc:mysql://localhost:3306/lib_book?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private final String DB_URL = "jdbc:mysql://localhost:3306/movies?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private final String NAME = "root";
-    private final String PASSWORD = "root";
+    private final String PASSWORD = "Grigor1996.";
 
     private DBConnectionProvider() {
         try {

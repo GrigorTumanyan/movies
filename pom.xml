@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>lib_book</artifactId>
+    <artifactId>movies</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>lib_book</name>
+    <name>movies</name>
     <packaging>war</packaging>
 
-<!--    <properties>-->
-<!--        <maven.compiler.target>1.8</maven.compiler.target>-->
-<!--        <maven.compiler.source>1.8</maven.compiler.source>-->
-<!--        <junit.version>5.7.0</junit.version>-->
-<!--    </properties>-->
+    <!--    <properties>-->
+    <!--        <maven.compiler.target>1.8</maven.compiler.target>-->
+    <!--        <maven.compiler.source>1.8</maven.compiler.source>-->
+    <!--        <junit.version>5.7.0</junit.version>-->
+    <!--    </properties>-->
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -95,7 +95,7 @@
     </dependencies>
 
     <build>
-        <finalName>LibBook</finalName>
+        <finalName>movies</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -105,7 +105,9 @@
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                 </configuration>
             </plugin>
+
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
