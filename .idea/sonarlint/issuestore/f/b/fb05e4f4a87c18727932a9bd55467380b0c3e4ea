@@ -1,0 +1,13 @@
+
+k	java:S116"VRename this field "DRIVER_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ЧшЃЬ
+k	java:S116"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ІШяяяяя
+i	java:S116"ORename this field "NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±я‰Ээяяяя
+m	java:S116"SRename this field "PASSWORD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ччвяяяяя
+7
+java:S1170"!Make this final field static too.(ЧшЃЬ
+<
+java:S1170"!Make this final field static too.(•ІШяяяяя
+<
+java:S1170"!Make this final field static too.(±я‰Ээяяяя
+<
+java:S1170"!Make this final field static too.(ччвяяяяя

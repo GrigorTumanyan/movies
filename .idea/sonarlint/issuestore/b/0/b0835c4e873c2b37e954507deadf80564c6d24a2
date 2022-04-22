@@ -1,0 +1,16 @@
+
+t
+java:S1989"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¡îìöúÿÿÿÿ
+n
+java:S1989"SHandle the following exception that could be thrown by "upNextMovie": SQLException.(Ğó‚¼ûÿÿÿÿ
+Q
+java:S2441";Make "Movie" serializable or don't store it in the session.(™ù°Ù
+h
+java:S2441"MMake "List" and its parameters serializable or don't store it in the session.(óœøÎûÿÿÿÿ
+|
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Ò¬ğşÿÿÿÿ
+P	java:S125 "<This block of commented-out lines of code should be removed.(ÅÓ’@
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+F
+java:S1128"1Remove this unused import 'java.util.LinkedList'.(»Äğ1
