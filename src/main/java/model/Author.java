@@ -11,9 +11,11 @@ public class Author {
     private int id;
     private String name;
     private String surname;
+    private String biography;
 
     public Author(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
+
 }

@@ -16,7 +16,7 @@ public class UserManager {
 
     public void userRegister(User user) throws SQLException {
 
-        PreparedStatement statement = connection.prepareStatement("Insert into users(name, surname, email, password) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+        PreparedStatement statement = connection.prepareStatement("Insert into user(name, surname, email, password) VALUES (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
         statement.setString(1, user.getName());
         statement.setString(2, user.getSurname());
         statement.setString(3, user.getEmail());
@@ -34,7 +34,7 @@ public class UserManager {
 
     public User userLogin(String email, String password) throws SQLException {
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select*FROM users");
+        ResultSet resultSet = statement.executeQuery("select*FROM user");
         while (resultSet.next()) {
             if (resultSet.getString("email").equals(email) &&
                     resultSet.getString("password").equals(password)) {
